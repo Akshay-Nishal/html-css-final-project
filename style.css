@@ -21,6 +21,8 @@ body{
 }
 a{
     text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
     text-transform: capitalize;
     color: var(--primary-text-color);
     padding-bottom: 5px;
@@ -108,39 +110,10 @@ main{
     justify-content: space-between;
 }
 
-main .contact-outer{
-    position:absolute;
-    right: 0;
-    bottom: -108px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-main .contact-outer .contents{
-    padding: 40px 80px 40px 150px;
-    background: var(--primary-bg-color);
-    color: white;
-    width: 1000px;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-.contact-inner{
-    /* height: 150px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contact-img{
-    height: 20px;
-}
-main .contact-outer .contents .common-social{
-    bottom: 100%;
-    right: 0%;
-}
 header{
+    /* position: absolute; */
     /* overflow-y: hidden; */
-    margin: 30px 80px;
+    margin: 30px 5%;
     height: 90px;
     background-color: white;
     display: flex;
@@ -176,7 +149,7 @@ nav{
 }
 #nav_last{
     margin-left: 20px;
-    padding: 0 22px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     height: 90px;
@@ -208,16 +181,12 @@ nav .active, a:hover{
 }
 
 
-
-
-
-
-
 .hero{
-    position:absolute;
-    bottom: 240px;
+    margin-bottom: 250px;
+    /* position:absolute; */
+    /* bottom: 240px; */
     color: white;
-    margin: 0px 130px;
+    margin: 0px 5%;
     width: fit-content;
 }
 .hero h1{
@@ -248,6 +217,51 @@ nav .active, a:hover{
 }
 
 
+
+
+
+main .contact-outer{
+    display: block;
+    /* position:absolute; */
+    right: 0;
+    height: 35vh;
+    /* bottom: -50px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+main .contact-outer .contents{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    bottom: -70px;
+    background: var(--primary-bg-color);
+    color: white;
+    width: 1000px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.contact-inner{
+    /* height: 150px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-img{
+    height: 20px;
+}
+main .contact-outer .contents .common-social{
+    bottom: 100%;
+    right: 0%;
+}
+
+
+
+
+
+
 /*******
 SPECILIZATION
 *******/
@@ -256,14 +270,25 @@ SPECILIZATION
     
 }
 .speci{
-    margin: 80px 130px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.speci-heading{
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
+.speci-menu{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 .speci h1{
     font-size: 42px;
 }
 .speci .speci-list{
-    width: 18%;
+    width: calc(25% - 15px);
 }
 .speci .speci-list h2{
     font-size: 20px;
@@ -281,26 +306,31 @@ SPECILIZATION
 
 
 /*******
-quote
+who we are
 *******/
 
 .we-are{
     padding-top: 100px;
-    margin: 80px 130px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
 
 }
 .we-are-box{
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .we-are .image-box{
     /* padding-left: 100p; */
-    width: calc(50% - 25px);
+    width: calc(60% - 25px);
 }
 .we-are img{
-    width: 90%;
+    width: 100%;
 }
 .we-are .we-are-content{
-    width: calc(50% - 25px);
+    width: calc(40% - 25px);
     padding-left: 60px;
 }
 .we-are .we-are-content h1{
@@ -322,11 +352,20 @@ quote
 }
 
 /*******
-quote
+stats
 *******/
 
+.stats-bar{
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+}
+
 .stats{
-    margin: 80px 160px 80px 130px;
+    
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .stat-item{
     width: 170px;
@@ -350,15 +389,22 @@ our-work
 .work{
     background-color: #f7f8fc;
     display: block;
-    margin: 50px 0px 0px 0px;
+    /* margin: 50px 0px 0px 0px; */
 }
 .work .heading{
-    padding: 50px 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+    /* padding: 50px 150px; */
 }
 .heading h1{
     font-size: 42px;
 }
 .heading  a{
+    
+    font-weight: 600;
+    letter-spacing: 1px;
     font-size: 14px;
 }
 .heading  a:hover{
@@ -373,6 +419,7 @@ our-work
 .projects{
     flex-wrap: wrap;
     padding: 30px;
+    padding-top: 0px;
 
 }
 
@@ -384,6 +431,10 @@ our-work
 .projects .project img{
     width: 100%;
     display: block;
+}
+.work .projects a{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 /* img:hover {
@@ -482,12 +533,22 @@ prof
 }
 .prof .heading{
     width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
+
+.prof .members{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 .prof .members .member{
-    /* width: calc(25%-20px); */
-    width:22%;
+    width: calc(25% - 20px);
+    /* width:22%; */
     position: relative;
 }
+
+
 #mem1{
     
     background-image: url(./team-1.jpg);
@@ -516,15 +577,17 @@ prof
 }
 .prof .members .member .content{
     background:white ;
-    padding: 15px;
+    padding: 20px;
 }
 .prof .members .member .content h2{
     margin: 0px;
     font-size: 18px;
+    padding-right: 50px;
     margin-bottom: 15px;
 }
 .prof .members .member .content p{
     margin: 0px;
+    padding-right: 50px;
     color: var(--primary-text-color);
     
 }
@@ -537,7 +600,9 @@ testimonials
 *******/
 .testimonial{
     background-color: #f7f8fc;
-    padding: 100px 140px;
+    padding: 100px 5%;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .test-info{
     max-width: 40%;
@@ -633,22 +698,39 @@ testimonials
 NEWS
 *********/
 .news{
-    padding: 100px 9% 0% 9%;
+    padding: 100px 5% 0% 5%;
     background-color: #ffff;
     /* margin-top:200px; */
     margin-bottom: 150px;
 }
+
+.news-head{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 .news h1{
     font-size: 42px;
 }
-.news  a{
+.news-card  a{
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: white;
     font-size: 14px;
 }
 .news a:hover{
-    border-bottom: var(--primary-bg-color) solid 2px;
+    color: white;
+    opacity: 1;
+    border-bottom: white solid 2px;
+}
+
+.news-content{
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .news-card{
+    margin-top: 20px;
     cursor: pointer;
     width: 32%;
     position: relative;
@@ -748,48 +830,38 @@ NEWS
 Compaines
 ********/
 .companies{
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     background-image: linear-gradient(56deg, #e47312, #ff6361);
 }
 
 .bar{
-    height: 100px;
-    padding: 0px 150px;
+    /* height: 100px; */
+    padding: 0px 7%;
     color:white;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .bar h2{
-    width: 20%;
+    /* width: 20%; */
     color: #ffff;
     font-size: 15px;
     line-height: 20px;
-}
-.comp-logo{
-    min-height: 100px;
-    width: 20%;
-    background-position: 50% 50%;
-    background-size: 100px;
-    background-repeat: no-repeat;
-    -webkit-transition: all 400ms ease;
-    transition: all 400ms ease;
-    text-align: center;
-}
-.logo1{
-    background-image: url(./logo-1w.png);
-}
-.logo2{
-    background-image: url(./logo-2w.png);
-}
-.logo3{
-    background-image: url(./logo-3w.png);
-}
-.logo4{
-    background-image: url(./logo-4w.png);
-}
-.logo5{
-    background-image: url(./logo-5w.png);
+    letter-spacing: 1px;
 }
 
+.logo-bar{
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+}
+
+.logo-bar img{
+    height: 50px;
+    margin-right: 20px;
+}
+/* .logo-bar:last-child img{
+    margin-right: 0px;
+} */
 
 /*******
 footer
@@ -815,7 +887,8 @@ footer{
     position: relative;
 }
 .primary{
-    
+    flex-wrap: wrap;
+    flex-direction: row;
     display: flex;
     align-items: flex-start;
 }
@@ -903,10 +976,881 @@ footer a:hover{
 
 
 
+/********************************
+SIZE BELOW 992
+********************************/
 
 
-@media only screen and (max-width: 1000px) {
+
+
+@media only screen and (max-width: 991px) {
+
+/*******
+Main
+*******/
+
+
     body {
         padding: 0px;
     }
+
+    header nav{
+        display: none;
+    }
+    header {
+        display: none;
+    }
+
+.hero h1{
+    font-size: 50px;
+}
+
+
+
+    /*******
+SPECILIZATION
+*******/
+ 
+.speci{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.speci-heading{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.speci-heading h1{
+    font-size: 32px;
+}
+
+.speci-menu{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.speci .speci-list{
+    width: calc(25% - 15px);
+}
+
+
+/*******
+we-are
+*******/
+.we-are{
+    padding-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+.we-are-box{
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.we-are .image-box{
+    /* padding-left: 100p; */
+    width: calc(100% );
+}
+.we-are img{
+    width: 100%;
+}
+.we-are .we-are-content{
+    margin-top: 80px;
+    width: calc(100%);
+    padding-left: 0px;
+}
+.we-are .we-are-content h1{
+    font-size: 32px;
+}
+
+
+
+/*******
+stats
+*******/
+.stats-bar{
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+}
+
+.stats{
+    
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.stat-item{
+    width: 170px;
+}
+
+.stats h1{
+    font-size: 60px;
+    color: var(--primary-bg-color);
+    margin: 0px;
+    padding: 0px;
+}
+.stats p{
+    font-size: 17px;
+    color: var(--primary-text-color);
+}
+
+
+
+/*******
+our work
+*******/
+
+.work .heading h1{
+    font-size: 32px;
+}
+.work .heading a{
+    font-size: 14px;
+}
+
+/*******
+quote
+*******/
+
+/*******
+prof
+*******/
+.prof{
+    margin: 0px 0px;  
+    padding-top: 100px; 
+    background-color: #f7f8fc;
+}
+.prof .heading{
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.prof .members{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.member{
+    margin-top: 30px;
+}
+
+
+/*******
+testimonials
+*******/
+.testimonial{
+    padding: 100px 0px;
+    /* margin-left: 40px;
+    margin-right: 40px; */
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.test-info{
+    /* align-items: start; */
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 80px;
+    max-width: 100%;
+    /* padding: 0px; */
+}
+.test-info h1{
+    font-size: 32px;
+    /* margin: 0px; */
+}
+.test-info p{
+    font-size: 17px;
+}
+.test-info  a{
+    font-size: 13px;
+}
+.test-card{
+    width: 100%;
+    padding: 0px 60px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    width: 45%;
+}
+
+
+#second-c{
+    margin-top:80px;
+}
+#fourth-c{
+    margin-top:80px;
+}
+
+
+
+/*******
+news
+*******/
+.news{
+    padding: 100px 40px 0% 40px;
+    background-color: #ffff;
+    /* margin-top:200px; */
+    margin-bottom: 150px;
+}
+
+/* .news-head{
+    flex-wrap: wrap;
+    flex-direction: row;
+} */
+
+.news h1{
+    font-size: 32px;
+}
+.news  a{
+    font-size: 13px;
+}
+/* .news-content{
+    flex-wrap: wrap;
+    flex-direction: row;
+} */
+
+.news-card{
+    width: 32%;
+    position: relative;
+}
+
+
+
+/*******
+companies
+*******/
+.companies{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.bar{
+    /* height: 100px; */
+    padding: 0px 20px;
+    color:white;
+    flex-direction: column;
+}
+
+.logo-bar{
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    padding: 0 40px;
+    justify-content: space-around;
+}
+
+.logo-bar img{
+    height: 50px;
+    /* margin-right: px; */
+    /* margin-right: 20px; */
+}
+
+
+
+
+/*******
+footer
+*******/
+footer{
+    width: 100%;
+}
+.footer-box{
+    padding: 60px 25px 0px 25px;
+    position: relative;
+}
+.primary{
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+}
+
+footer .about, .services, .contact{
+    /* width: calc(33%-30px); */
+    width: 30%;
+    padding-right: 40px;
+}
+
+footer a{
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    /* padding-bottom: 20px; */
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+}
+footer a:hover{
+    padding-bottom: 3px;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.logo{
+    margin-bottom: 30px;
+    height: 60px;
+    padding: 0 35px;
+    background-color: var(--primary-bg-color);
+}
+
+
+  }
+
+
+  
+/********************************
+SIZE BELOW 767
+********************************/
+
+
+  @media only screen and (max-width: 767px) {
+    body {
+        padding: 0px;
+    }
+
+    header nav{
+        display: none;
+    }
+    header {
+        display: none;
+    }
+
+
+    /*******
+SPECILIZATION
+*******/
+ 
+.speci{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.speci-heading{
+    flex-direction: row;
+}
+
+.speci-heading h1{
+    font-size: 26px;
+}
+.speci a{
+font-size: 13px;
+}
+
+.speci-menu{
+    flex-direction: column;
+}
+.speci .speci-list{
+    margin-top: 40px;
+    width: calc(100%);
+}
+
+
+/*******
+we-are
+*******/
+.we-are{
+    padding-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+.we-are .we-are-content h1{
+    font-size: 26px;
+}
+.we-are .we-are-content a{
+    font-size: 13px;
+}
+
+
+
+/*******
+stats
+*******/
+.stats-bar{
+    flex-wrap: wrap; 
+    flex-direction: column; 
+    align-items: start;
+}
+
+.stats{
+    
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.stat-item{
+    width: auto;
+}
+
+.stats h1{
+    line-height: 70px;
+    font-weight: 500;
+}
+.stats p{
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+
+
+/*******
+our work
+*******/
+.work .heading h1{
+    font-size: 26px;
+}
+.work .heading a{
+    font-size: 13px;
+}
+
+.projects{
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.project{
+    width: 100%;
+    position: relative;
+    margin-top: 25px;
+}
+
+/*******
+quote
+*******/
+
+/*******
+prof
+*******/
+.prof{
+    margin: 0px 0px;  
+    padding-top: 100px; 
+    background-color: #f7f8fc;
+}
+.prof .heading{
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.prof .members{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.prof .members .member{
+    width: 90%;
+}
+
+/*******
+testimonials
+*******/
+.testimonial{
+    padding: 100px 0px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.test-info{
+    margin-bottom: 80px;
+}
+.test-info h1{
+    font-size: 26px;
+    /* margin: 0px; */
+}
+.test-info p{
+    font-size: 17px;
+}
+.test-card{
+    flex-direction: column;
+}
+.card{
+    margin-top: 50px;
+    width: 100%;
+}
+
+
+#second-c{
+    margin-top:50px;
+}
+#fourth-c{
+    margin-top:50px;
+}
+
+
+
+/*******
+news
+*******/
+.news{
+    padding: 100px 40px 0% 40px;
+    background-color: #ffff;
+    /* margin-top:200px; */
+    margin-bottom: 150px;
+}
+
+/* .news-head{
+    flex-wrap: wrap;
+    flex-direction: row;
+} */
+
+.news h1{
+    font-size: 26px;
+}
+.news  a{
+    font-size: 13px;
+}
+ .news-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+} 
+
+.news-card{
+    margin-bottom: 30px;
+    width: 100%;
+    position: relative;
+}
+
+
+
+/*******
+companies
+*******/
+.companies{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.bar{
+    /* height: 100px; */
+    padding: 0px 20px;
+    color:white;
+    flex-direction: column;
+}
+
+.logo-bar{
+    flex-wrap: wrap; 
+    flex-direction: row; 
+    padding: 0 40px;
+    justify-content: start;
+}
+
+.logo-bar img{
+    height: 50px;
+    /* margin-right: px; */
+    /* margin-right: 20px; */
+}
+
+
+
+
+/*******
+footer
+*******/
+footer{
+    width: 100%;
+}
+.footer-box{
+    padding: 60px 25px 0px 25px;
+    position: relative;
+}
+.primary{
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+}
+
+footer .about, .services, .contact{
+    /* width: calc(33%-30px); */
+    margin-bottom: 40px;
+    width: 100%;
+    padding-right: 40px;
+}
+.logo{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    height: 60px;
+    padding: 0 35px;
+    background-color: var(--primary-bg-color);
+}
+
+
+  }
+
+
+
+
+
+
+
+/********************************
+SIZE BELOW 478
+********************************/
+
+
+@media only screen and (max-width: 478px) {
+    body {
+        padding: 0px;
+    }
+
+    header nav{
+        display: none;
+    }
+    header {
+        display: none;
+    }
+
+    main .contact-outer{
+        display: none;
+    }
+    main .contact-outer .common-social{
+        display: block;
+    }
+    main{
+        margin-bottom: 20px;
+    }
+
+
+    /*******
+SPECILIZATION
+*******/
+ 
+.speci{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.speci-heading{
+    flex-direction: column;
+    align-items: start;
+}
+
+.speci-heading h1{
+    font-size: 26px;
+}
+.speci a{
+font-size: 13px;
+}
+
+.speci-menu{
+    flex-direction: column;
+}
+.speci .speci-list{
+    margin-top: 40px;
+    width: calc(100%);
+}
+
+
+/*******
+we-are
+*******/
+.we-are{
+    padding-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+.we-are .we-are-content h1{
+    font-size: 26px;
+}
+.we-are .we-are-content a{
+    font-size: 13px;
+}
+
+
+
+/*******
+stats
+*******/
+.stats-bar{
+    flex-wrap: wrap; 
+    flex-direction: column; 
+    align-items: start;
+}
+
+.stats{
+    
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.stat-item{
+    width: auto;
+}
+
+.stats h1{
+    line-height: 70px;
+    font-weight: 500;
+}
+.stats p{
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+
+
+/*******
+our work
+*******/
+.work .heading{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+
+/*******
+quote
+*******/
+.quote{
+    align-items: start;
+    text-align: left;
+}
+.quote a{
+    font-size: 13px;
+}
+
+
+/*******
+prof
+*******/
+.prof{
+    margin: 0px 0px;  
+    padding-top: 100px; 
+    background-color: #f7f8fc;
+}
+.prof .heading{
+    align-items: start;
+    flex-direction: column;
+}
+
+.prof .members{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.prof .members .member{
+    width: 90%;
+}
+
+/*******
+testimonials
+*******/
+.testimonial{
+    padding: 100px 0px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.test-info{
+    margin-bottom: 80px;
+}
+.test-info h1{
+    font-size: 26px;
+    /* margin: 0px; */
+}
+.test-info p{
+    font-size: 17px;
+}
+.test-card{
+    flex-direction: column;
+}
+.card{
+    margin-top: 50px;
+    width: 100%;
+}
+
+
+#second-c{
+    margin-top:50px;
+}
+#fourth-c{
+    margin-top:50px;
+}
+
+
+
+/*******
+news
+*******/
+.news-head{
+    
+    flex-wrap: wrap; 
+    flex-direction: column; 
+    align-items: start;
+}
+
+
+
+/*******
+companies
+*******/
+
+.logo-bar{
+    flex-wrap: wrap; 
+    flex-direction: column; 
+    padding: 0 40px;
+    justify-content: start;
+}
+
+.logo-bar img{
+    margin: 20px ;
+    height: 50px;
+    /* margin-right: px; */
+    /* margin-right: 20px; */
+}
+
+
+
+
+/*******
+footer
+*******/
+footer{
+    width: 100%;
+}
+.footer-box{
+    padding: 60px 25px 0px 25px;
+    position: relative;
+}
+.primary{
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+}
+
+footer .about, .services, .contact{
+    /* width: calc(33%-30px); */
+    margin-bottom: 40px;
+    width: 100%;
+    padding-right: 40px;
+}
+.logo{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    height: 60px;
+    padding: 0 35px;
+    background-color: var(--primary-bg-color);
+}
+
+
   }
