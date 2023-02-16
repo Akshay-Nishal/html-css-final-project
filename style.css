@@ -73,8 +73,8 @@ background: var(--primary-bg-color);
     background-color: black;
 }
 .common-social a{
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,10 +200,10 @@ nav .active, a:hover{
     margin-top: 20px;
     display: flex;
     align-items: center;
-    font-weight: 500;
+    font-weight: 100;
     text-align: center;
     padding: 15px 25px;
-    width: 140px;
+    width:fit-content;
     height: 50px;
     background-color: var(--primary-bg-color);
     transition: 0.2;
@@ -214,6 +214,8 @@ nav .active, a:hover{
 }
 .hero a{
     color: white;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 
@@ -246,6 +248,7 @@ main .contact-outer .contents{
 .contact-inner{
     /* height: 150px; */
     display: flex;
+    justify-content:initial;
     flex-direction: column;
     align-items: center;
 }
@@ -258,6 +261,13 @@ main .contact-outer .contents .common-social{
 }
 
 
+.mobile{
+    display: none;
+}
+
+.menu-line{
+    display: none;
+}
 
 
 
@@ -886,6 +896,23 @@ footer{
     padding: 40px 80px 0px 80px;
     position: relative;
 }
+.xyz{
+    position: relative;
+
+}
+.orange-line {
+    position: absolute;
+    left: 0%;
+    top: 8px;
+    margin-left: 100px;
+    width: 70%;
+    height: 1.5px;
+    background-color: #ff6361;
+}
+.footer-title{
+    z-index: 1;
+}
+
 .primary{
     flex-wrap: wrap;
     flex-direction: row;
@@ -1000,13 +1027,73 @@ Main
     header {
         display: none;
     }
+    main{
+        height: auto;
+    }
+
+.hero{
+    margin-top: 100px;
+}
 
 .hero h1{
-    font-size: 50px;
+    font-size: 40px;
+}
+
+.hero h2{
+    font-weight: 100;
+}
+
+header{
+    margin: 0px;
+    height: 60px;
+}
+header .logo{
+    height: 60px;
+    margin: 0px;
+}
+header .logo img{
+    height: 20px;
+}
+
+.contact-outer{
+    margin-top: 80px;
+}
+.contact-inner{
+    width: 30%;
+    align-items: center;
+    text-align: center;
+}
+.contact-outer .contact-inner h3{
+    font-size: 13px;
+
+}
+.contact-outer .contact-inner a{
+    font-size: 13px;
+
+}
+
+main .contact-outer .contents{
+    padding: 20px;
+}
+
+.menu-line{
+    /* display: flex; */
+    padding: 20px 15px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 
-
+.line{
+    /* margin-bottom: 5px; */
+    width: 30px;
+    height: 2px;
+    background-color: black;
+}
     /*******
 SPECILIZATION
 *******/
@@ -1623,6 +1710,15 @@ SIZE BELOW 478
         margin-bottom: 20px;
     }
 
+    .mobile{
+        display: block;
+    }
+    
+.hero{
+    margin-top: 60px;
+    margin-right: 60px;
+    margin-bottom: 130px;
+}
 
     /*******
 SPECILIZATION
@@ -1655,6 +1751,25 @@ font-size: 13px;
 }
 
 
+/* .hamburger-line {
+    left: unset;
+    top: 50%;
+    right: 0;
+    width: 30px;
+}
+.hamburger-line {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    width: 50%;
+    height: 2px;
+    background-color: #000;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+} */
 /*******
 we-are
 *******/
